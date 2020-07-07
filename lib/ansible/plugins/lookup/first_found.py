@@ -43,7 +43,7 @@ EXAMPLES = """
 - name: |
         include tasks only if files exist.  Note the use of query() to return
         a blank list for the loop if no files are found.
-  import_tasks: '{{ item }}'
+  include_tasks: '{{ item }}'
   vars:
     params:
       files:
